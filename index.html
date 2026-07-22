@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>DFW Errands - Driver Onboarding & App Download</title>
-  <meta name="description" content="Download the DFW Errands driver application for Android and iOS. Join our fleet of drivers across Dallas-Fort Worth." />
+  <meta name="description" content="Download the DFW Errands driver application for Android and iOS." />
   <link rel="icon" type="image/png" href="./logo.png" />
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,38 +15,30 @@
 </head>
 <body>
 
-  <!-- Top Navbar Header -->
+  <!-- Minimal Navbar Header -->
   <header class="top-nav">
     <div class="nav-container">
-      <a href="https://dfwerrands.com" class="nav-brand" title="DFW Errands Main Site">
+      <a href="https://dfwerrands.com" class="nav-brand" title="DFW Errands Main Site" target="_blank">
         <img src="./logo.png" alt="DFW Errands Logo" class="nav-logo" />
-        <span class="brand-title">DFW ERRANDS <span class="badge">DRIVERS</span></span>
+        <span class="brand-title">DFW ERRANDS</span>
       </a>
-      <nav class="nav-links">
-        <a href="https://dfwerrands.com" target="_blank" class="nav-link">Main Business Site ↗</a>
-        <a href="#android-steps" class="nav-link">Android Guide</a>
-        <a href="#iphone-steps" class="nav-link">iPhone Guide</a>
-        <a href="https://dfwerrands.com" target="_blank" class="btn-nav-primary">Visit Business Page</a>
-      </nav>
+      <a href="https://dfwerrands.com" target="_blank" class="nav-main-site-btn">
+        <span>Main Website</span>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="arrow-icon">
+          <path d="M7 17L17 7M17 7H7M17 7V17"/>
+        </svg>
+      </a>
     </div>
   </header>
 
-  <!-- Hero / Header Banner Section -->
-  <section class="banner-section">
-    <div class="banner-badge">Official Driver Portal</div>
-    <img src="./logo.png" alt="DFW Errands Logo" class="main-header-logo" />
-    <h1 class="main-heading">Join the DFW Errands Fleet</h1>
-    <p class="main-subheading">Deliver convenience across Dallas-Fort Worth. Download the driver mobile application below to start earning.</p>
-  </section>
-
-  <!-- Main Card Container -->
+  <!-- Main Content Container -->
   <main class="page-container">
     
     <div class="onboarding-card">
 
-      <!-- Card Title & Subtitle (Replicated exact text) -->
+      <!-- Card Title & Subtitle -->
       <div class="card-header">
-        <h2 class="card-title">Driver Onboarding</h2>
+        <h1 class="card-title">Driver Onboarding</h1>
         <p class="card-subtitle">
           Welcome! Please download the driver application below and follow the instructions to install it on your device.
         </p>
@@ -63,7 +55,6 @@
            class="download-btn btn-android"
            id="android-download-btn">
           <svg class="btn-icon android-icon" viewBox="0 0 24 24" fill="currentColor">
-            <!-- Android Logo Icon -->
             <path d="M6 18c0 .55.45 1 1 1h1v3c0 .55.45 1 1 1s1-.45 1-1v-3h4v3c0 .55.45 1 1 1s1-.45 1-1v-3h1c.55 0 1-.45 1-1V9H6v9zm-2-9c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1s1-.45 1-1v-7c0-.55-.45-1-1-1zm16 0c-.55 0-1 .45-1 1v7c0 .55.45 1 1 1s1-.45 1-1v-7c0-.55-.45-1-1-1zM7.54 4.39l-1.1-1.9c-.16-.28-.06-.63.22-.79.27-.16.62-.06.78.21l1.14 1.97C9.8 3.32 10.87 3 12 3c1.13 0 2.2.32 3.42.88l1.14-1.97c.16-.27.51-.37.78-.21.28.16.38.51.22.79l-1.1 1.9C18.25 5.4 19.5 7.07 19.83 9H4.17c.33-1.93 1.58-3.6 3.37-4.61zM9 7.5c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1zm6 0c.55 0 1-.45 1-1s-.45-1-1-1-1 .45-1 1 .45 1 1 1z"/>
           </svg>
           <span class="btn-text">Download Android APK</span>
@@ -74,31 +65,20 @@
            class="download-btn btn-apple"
            id="apple-download-btn">
           <svg class="btn-icon apple-icon" viewBox="0 0 24 24" fill="currentColor">
-            <!-- TestFlight / Apple Logo Icon -->
             <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 4.04c.66-.8 1.11-1.92.99-3.04-.96.04-2.12.64-2.8 1.44-.61.71-1.14 1.86-1 2.97 1.07.08 2.15-.57 2.81-1.37z"/>
           </svg>
           <span class="btn-text">Download via Apple TestFlight</span>
         </a>
       </div>
 
-      <!-- Quick Utility Tools -->
+      <!-- Quick Copy Link Utility -->
       <div class="utility-actions">
-        <button class="util-btn" id="qr-modal-btn" title="Scan QR Code to download APK on mobile">
-          <svg viewBox="0 0 24 24" class="util-icon" fill="none" stroke="currentColor" stroke-width="2">
-            <rect x="3" y="3" width="7" height="7" rx="1"/>
-            <rect x="14" y="3" width="7" height="7" rx="1"/>
-            <rect x="3" y="14" width="7" height="7" rx="1"/>
-            <path d="M14 14h3v3h-3zM17 17h3v3h-3zM14 18h2v2h-2z"/>
-          </svg>
-          <span>Scan Phone QR Code</span>
-        </button>
-
         <button class="util-btn" id="copy-link-btn" title="Copy APK Download Link">
           <svg viewBox="0 0 24 24" class="util-icon" fill="none" stroke="currentColor" stroke-width="2">
             <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
             <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
           </svg>
-          <span id="copy-btn-text">Copy Direct Link</span>
+          <span id="copy-btn-text">Copy Direct Download Link</span>
         </button>
       </div>
 
@@ -106,9 +86,9 @@
 
       <!-- Android Installation Steps -->
       <div class="steps-section" id="android-steps">
-        <h3 class="steps-title">
+        <h2 class="steps-title">
           <span class="emoji">📱</span> Android Installation Steps
-        </h3>
+        </h2>
         <ul class="steps-list">
           <li>Tap <strong>'Download Android APK'</strong> button.</li>
           <li>Allow installation from <strong>"Unknown Sources"</strong>.</li>
@@ -121,9 +101,9 @@
 
       <!-- iPhone Installation Steps (TestFlight) -->
       <div class="steps-section" id="iphone-steps">
-        <h3 class="steps-title">
+        <h2 class="steps-title">
           <span class="emoji">🍎</span> iPhone Installation Steps <span class="sub-text">(TestFlight)</span>
-        </h3>
+        </h2>
         <ul class="steps-list">
           <li>Tap <strong>'Download via Apple TestFlight'</strong> button.</li>
           <li>Install TestFlight if prompted.</li>
@@ -136,31 +116,16 @@
 
   </main>
 
-  <!-- QR Code Modal -->
-  <div class="modal-overlay" id="qr-modal">
-    <div class="modal-card">
-      <button class="modal-close" id="modal-close-btn">&times;</button>
-      <div class="modal-badge">Mobile Download</div>
-      <h3 class="modal-title">Scan to Download APK</h3>
-      <p class="modal-desc">Point your smartphone camera at this QR code to download the driver app directly onto your phone.</p>
-      <div class="qr-code-wrapper">
-        <img src="https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=https%3A%2F%2Fdrive.google.com%2Ffile%2Fd%2F1qXycBRQ0TipDOuqakD0IMZaP1U9dQR3T%2Fview%3Fusp%3Ddrive_link" alt="Download APK QR Code" class="qr-img" />
-      </div>
-      <p class="qr-link-text">URL: drive.google.com/file/d/1qXycBRQ.../view</p>
-      <button class="btn-modal-action" id="modal-copy-btn">Copy Link to Clipboard</button>
-    </div>
-  </div>
-
   <!-- TestFlight Info Modal -->
   <div class="modal-overlay" id="testflight-modal">
     <div class="modal-card">
       <button class="modal-close" id="testflight-close-btn">&times;</button>
       <div class="modal-badge ios-badge">Apple iOS</div>
       <h3 class="modal-title">Apple TestFlight Access</h3>
-      <p class="modal-desc">The iOS version is currently distributed through Apple TestFlight. If you have been invited, click below to join the beta program or contact support to request access.</p>
+      <p class="modal-desc">The iOS version is distributed via Apple TestFlight. Click below to open TestFlight or join the beta program.</p>
       <div class="modal-actions">
-        <a href="https://testflight.apple.com" target="_blank" class="download-btn btn-apple full-w">Open Apple TestFlight App</a>
-        <button class="btn-secondary" id="testflight-ok-btn">Got It</button>
+        <a href="https://testflight.apple.com" target="_blank" class="download-btn btn-apple full-w">Open Apple TestFlight</a>
+        <button class="btn-secondary" id="testflight-ok-btn">Close</button>
       </div>
     </div>
   </div>
@@ -168,113 +133,59 @@
   <!-- Toast Notification -->
   <div class="toast" id="toast-msg">Link copied to clipboard!</div>
 
-  <!-- Main Footer -->
+  <!-- Minimal Clean Footer -->
   <footer class="footer-section">
     <div class="footer-container">
       
-      <div class="footer-grid">
-        
-        <!-- Column 1: Company Info & Logo -->
-        <div class="footer-col brand-col">
-          <a href="https://dfwerrands.com" class="footer-logo-link">
-            <img src="./logo.png" alt="DFW Errands Logo" class="footer-logo" />
-            <span class="footer-brand-name">DFW ERRANDS</span>
-          </a>
-          <p class="footer-about">
-            DFW Errands delivers premium local errand, grocery, and courier services across the Dallas-Fort Worth metroplex. Join our driver network today and earn on your schedule.
-          </p>
-          <div class="contact-info">
-            <div class="contact-item">
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              <span>(214) 555-ERRAND</span>
-            </div>
-            <div class="contact-item">
-              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              <span>support@dfwerrands.com</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Column 2: Information / Quick Links -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Information</h4>
-          <ul class="footer-links">
-            <li><a href="https://dfwerrands.com/about" target="_blank">About Us</a></li>
-            <li><a href="https://dfwerrands.com" target="_blank" class="active-link">Main Business Page ↗</a></li>
-            <li><a href="#">Driver Onboarding</a></li>
-            <li><a href="https://dfwerrands.com/privacy" target="_blank">Privacy Policy</a></li>
-            <li><a href="https://dfwerrands.com/terms" target="_blank">Terms & Conditions</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 3: Services & Drivers -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Driver Services</h4>
-          <ul class="footer-links">
-            <li><a href="#android-download-btn">Android Driver App</a></li>
-            <li><a href="#apple-download-btn">iOS TestFlight App</a></li>
-            <li><a href="#android-steps">Installation Guide</a></li>
-            <li><a href="https://dfwerrands.com" target="_blank">Customer Portal</a></li>
-            <li><a href="https://dfwerrands.com/support" target="_blank">Driver Support</a></li>
-          </ul>
-        </div>
-
-        <!-- Column 4: Follow Us & Social Media -->
-        <div class="footer-col">
-          <h4 class="footer-heading">Follow Us</h4>
-          <p class="footer-social-desc">Stay connected with DFW Errands on social media:</p>
-          
-          <div class="social-icons">
-            <!-- Facebook -->
-            <a href="https://facebook.com" target="_blank" class="social-btn facebook" aria-label="Facebook">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
-              </svg>
-            </a>
-
-            <!-- X / Twitter -->
-            <a href="https://twitter.com" target="_blank" class="social-btn twitter" aria-label="Twitter X">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
-              </svg>
-            </a>
-
-            <!-- Instagram -->
-            <a href="https://instagram.com" target="_blank" class="social-btn instagram" aria-label="Instagram">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
-              </svg>
-            </a>
-
-            <!-- LinkedIn -->
-            <a href="https://linkedin.com" target="_blank" class="social-btn linkedin" aria-label="LinkedIn">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-              </svg>
-            </a>
-
-            <!-- Google / YouTube -->
-            <a href="https://google.com" target="_blank" class="social-btn google" aria-label="Google">
-              <svg viewBox="0 0 24 24" fill="currentColor">
-                <path d="M12.24 10.285V13.4h6.887c-.58 3.018-3.23 5.258-6.887 5.258-4.14 0-7.5-3.36-7.5-7.5s3.36-7.5 7.5-7.5c1.86 0 3.55.68 4.87 1.8l2.4-2.4C17.92 1.48 15.26.5 12.24.5 5.9.5.75 5.65.75 12s5.15 11.5 11.49 11.5c6.63 0 11.02-4.66 11.02-11.22 0-.76-.08-1.5-.2-2.22H12.24z"/>
-              </svg>
-            </a>
-          </div>
-        </div>
-
+      <!-- Brand & Tagline -->
+      <div class="footer-brand-wrap">
+        <a href="https://dfwerrands.com" target="_blank" class="footer-logo-link">
+          <img src="./logo.png" alt="DFW Errands Logo" class="footer-logo" />
+          <span class="footer-brand-name">DFW ERRANDS</span>
+        </a>
+        <p class="footer-tagline">Fast, reliable local delivery & courier service across Dallas-Fort Worth.</p>
       </div>
 
-      <!-- Footer Bottom Copyright Bar -->
-      <div class="footer-bottom">
-        <p>&copy; 2026 DFW Errands. All rights reserved. | <a href="https://dfwerrands.com" target="_blank">Visit Main Business Website</a></p>
-        <div class="footer-bottom-links">
-          <a href="https://dfwerrands.com/privacy" target="_blank">Privacy Policy</a>
-          <span>&bull;</span>
-          <a href="https://dfwerrands.com/terms" target="_blank">Terms & Conditions</a>
-          <span>&bull;</span>
-          <a href="https://dfwerrands.com/support" target="_blank">Support</a>
-        </div>
+      <!-- Social Media Icons Row -->
+      <div class="social-icons">
+        <a href="https://facebook.com" target="_blank" class="social-btn facebook" aria-label="Facebook" title="Facebook">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+          </svg>
+        </a>
+        <a href="https://twitter.com" target="_blank" class="social-btn twitter" aria-label="Twitter X" title="Twitter / X">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+          </svg>
+        </a>
+        <a href="https://instagram.com" target="_blank" class="social-btn instagram" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" class="social-btn linkedin" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+          </svg>
+        </a>
+        <a href="https://google.com" target="_blank" class="social-btn google" aria-label="Google" title="Google">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12.24 10.285V13.4h6.887c-.58 3.018-3.23 5.258-6.887 5.258-4.14 0-7.5-3.36-7.5-7.5s3.36-7.5 7.5-7.5c1.86 0 3.55.68 4.87 1.8l2.4-2.4C17.92 1.48 15.26.5 12.24.5 5.9.5.75 5.65.75 12s5.15 11.5 11.49 11.5c6.63 0 11.02-4.66 11.02-11.22 0-.76-.08-1.5-.2-2.22H12.24z"/>
+          </svg>
+        </a>
       </div>
+
+      <!-- Footer Navigation & Legal Links -->
+      <div class="footer-bottom-nav">
+        <a href="https://dfwerrands.com" target="_blank" class="footer-nav-link link-highlight">Visit Main Business Page ↗</a>
+        <span class="dot">&bull;</span>
+        <a href="https://dfwerrands.com/privacy" target="_blank" class="footer-nav-link">Privacy Policy</a>
+        <span class="dot">&bull;</span>
+        <a href="https://dfwerrands.com/terms" target="_blank" class="footer-nav-link">Terms of Service</a>
+      </div>
+
+      <!-- Copyright Line -->
+      <p class="copyright-text">&copy; 2026 DFW Errands. All rights reserved.</p>
 
     </div>
   </footer>
