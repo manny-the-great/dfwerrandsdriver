@@ -12,11 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
   const modalCloseBtn = document.getElementById('modal-close-btn');
   const modalCopyBtn = document.getElementById('modal-copy-btn');
 
-  const appleDownloadBtn = document.getElementById('apple-download-btn');
-  const testflightModal = document.getElementById('testflight-modal');
-  const testflightCloseBtn = document.getElementById('testflight-close-btn');
-  const testflightOkBtn = document.getElementById('testflight-ok-btn');
-
   const copyLinkBtn = document.getElementById('copy-link-btn');
   const copyBtnText = document.getElementById('copy-btn-text');
   const toastMsg = document.getElementById('toast-msg');
@@ -82,34 +77,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Apple TestFlight Modal Event Handlers
-  if (appleDownloadBtn && testflightModal) {
-    appleDownloadBtn.addEventListener('click', (e) => {
-      e.preventDefault();
-      testflightModal.classList.add('active');
-    });
-  }
-
-  if (testflightCloseBtn && testflightModal) {
-    testflightCloseBtn.addEventListener('click', () => {
-      testflightModal.classList.remove('active');
-    });
-  }
-
-  if (testflightOkBtn && testflightModal) {
-    testflightOkBtn.addEventListener('click', () => {
-      testflightModal.classList.remove('active');
-    });
-  }
-
-  if (testflightModal) {
-    testflightModal.addEventListener('click', (e) => {
-      if (e.target === testflightModal) {
-        testflightModal.classList.remove('active');
-      }
-    });
-  }
-
   // Copy Direct Link Button
   if (copyLinkBtn) {
     copyLinkBtn.addEventListener('click', copyApkLink);
@@ -119,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (qrModal) qrModal.classList.remove('active');
-      if (testflightModal) testflightModal.classList.remove('active');
     }
   });
 
